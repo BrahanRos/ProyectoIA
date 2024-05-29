@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptrón AND</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h1>Atleta que Entrena y Descansa</h1>
+        </div>
+        <div class="team">
+            <h2>Equipo</h2>
+            <div class="team-member">
+                <label for="name1">Nombre:</label>
+                <label for="name1">Brahan Alid Rosales Duarte</label>
+                <label for="id1">Carnet:</label>
+                <label for="name1">0900-15-8178</label>
+            </div>
+            <div class="team-member">
+                <label for="name1">Nombre:</label>
+                <label for="name1">Lester Alexandro Jiménez Matul</label>
+                <label for="id1">Carnet:</label>
+                <label for="name1">0900-20-3316</label>
+            </div>
+            <div class="team-member">
+                <label for="name1">Nombre:</label>
+                <label for="name1">José Daniel Gómez Larin </label>
+                <label for="id1">Carnet:</label>
+                <label for="name1">0900-20-21125</label>
+        </div>
+        <form id="trainForm">
+            <label for="epochs"><br>Número de épocas:</label>
+            <input type="number" id="epochs" name="epochs" min="1" value="10">
+            <button type="submit">Entrenar</button>
+            <button type="button" id="reset">Reiniciar</button>
+        </form>
+        <div id="results"></div>
+        <div id="evaluationResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
