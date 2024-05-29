@@ -33,7 +33,7 @@ async function trainPerceptron(epochs, trainingData) {
     resultsDiv.innerHTML = '';
 
     for (let epoch = 1; epoch <= epochs; epoch++) {
-        let epochData = `<h3>Época ${epoch}</h3><table><thead><tr><th>Entrena(w1)/Descansa(w2)</th><th>Pesos(x1,x2)</th><th>Factor de Aprendizaje(b)</th><th>Resultado</th><th>Salida</th><th>Error(es lo esperado?)</th></tr></thead><tbody>`;
+        let epochData = `<h3>Época ${epoch}</h3><table><thead><tr><th>Entrena(x1)/Descansa(x2)</th><th>Pesos(w1,w2)</th><th>Factor de Aprendizaje(b)</th><th>Resultado</th><th>Salida</th><th>Error(es lo esperado?)</th></tr></thead><tbody>`;
         for (let {input, output: expectedOutput} of trainingData) {
             let weightedSum = input[0] * weights[0] + input[1] * weights[1] + bias;
             let output = stepFunction(weightedSum);
